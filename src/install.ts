@@ -57,7 +57,6 @@ export async function installLint(versionConfig: VersionConfig): Promise<string>
 
 export async function installGo(): Promise<void> {
   const startedAt = Date.now()
-  process.env[`INPUT_GO-VERSION`] = `1`
   await setupGo()
   core.info(`Installed Go in ${Date.now() - startedAt}ms`)
 }

@@ -21,6 +21,9 @@ inputs:
     description: "if set to true and the action runs on a pull request - the action outputs only newly found issues"
     default: false
     required: true
+  go-version:
+    description: "passed to setup-go action"
+    default: '1'
 
 runs:
   using: "node12"
